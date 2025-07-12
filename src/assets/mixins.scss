@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card-hover {
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(156, 39, 176, 0.2);
+  }
+}
+
+@mixin gradient-text($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@mixin page-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  @include gradient-text($primary-gradient);
+
+  @media (max-width: $mobile) {
+    font-size: 2.5rem;
+  }
+}
+
+@mixin page-line {
+  width: 8rem;
+  height: 0.25rem;
+  background: $primary-gradient;
+  margin: 0 auto 1.5rem;
+}
+
+@mixin page-subtitle {
+  font-size: 1.25rem;
+  color: $text-secondary;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+@mixin card-base {
+  background: $card-bg;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid $border-color;
+}
+
+@mixin button-primary {
+  background: $primary-gradient;
+  color: $text-primary;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}

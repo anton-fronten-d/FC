@@ -1,0 +1,27 @@
+// Colors
+$primary-gradient: linear-gradient(135deg, #00d4ff, #9c27b0);
+$secondary-gradient: linear-gradient(135deg, #ff6b35, #f7931e);
+$dark-bg: linear-gradient(135deg, #0f172a, #581c87, #0f172a);
+$card-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+
+// Text Colors
+$text-primary: #ffffff;
+$text-secondary: #cbd5e1;
+$text-accent: #00d4ff;
+
+// Border Colors
+$border-color: rgba(156, 39, 176, 0.3);
+$hover-border: rgba(0, 212, 255, 0.5);
+
+// Specific Gradients
+$awards-gradient: linear-gradient(135deg, #ff6b35, #f7931e);
+$awards-line: linear-gradient(135deg, #ff6b35, #f7931e);
+$contacts-gradient: linear-gradient(135deg, #10b981, #3b82f6);
+$contacts-line: linear-gradient(135deg, #10b981, #3b82f6);
+$sponsorship-gradient: linear-gradient(135deg, #a855f7, #ec4899);
+$sponsorship-line: linear-gradient(135deg, #a855f7, #ec4899);
+
+// Breakpoints
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1200px;
