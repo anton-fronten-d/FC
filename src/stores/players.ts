@@ -154,7 +154,7 @@ export const usePlayersStore = defineStore('players', {
   }),
 
   getters: {
-    getPlayerById: (state) => (id) => {
+    getPlayerById: (state) => (id: any) => {
       return state.players.find((player) => player.id === Number.parseInt(id))
     },
   },
